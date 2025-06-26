@@ -406,8 +406,26 @@ const ContactPage: React.FC<ContactPageProps> = ({ onPageChange }) => {
           </div>
         </section>
       </div>
+      <a
+        href="https://wa.me/94771606788" // Replace with your actual number
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-4 right-4 z-50 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full shadow-lg flex items-center space-x-2"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-5 w-5"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path d="M20.52 3.48A11.89 11.89 0 0012 0C5.37 0 .02 5.34 0 11.94a11.9 11.9 0 001.63 6.05L0 24l6.2-1.63A11.91 11.91 0 0012 24c6.63 0 12-5.37 12-12 0-3.18-1.24-6.17-3.48-8.52zM12 22a9.99 9.99 0 01-5.27-1.47l-.38-.24-3.68.97.98-3.6-.25-.38A9.97 9.97 0 012 12C2 6.49 6.49 2 12 2s10 4.49 10 10-4.49 10-10 10zm5.46-7.2c-.3-.15-1.79-.88-2.07-.98s-.48-.15-.69.15c-.21.3-.79.98-.97 1.18s-.36.23-.66.08a8.19 8.19 0 01-2.4-1.48 9.07 9.07 0 01-1.66-2.07c-.17-.29-.02-.45.13-.6.13-.14.29-.36.44-.53.15-.18.19-.3.3-.49s.05-.37-.03-.53c-.08-.15-.69-1.65-.95-2.27-.25-.6-.5-.52-.69-.53h-.59c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.5 1.07 2.91 1.22 3.11c.15.2 2.1 3.2 5.1 4.48.71.31 1.27.5 1.7.64.71.23 1.36.2 1.88.12.57-.08 1.79-.73 2.04-1.43.25-.7.25-1.3.17-1.43-.07-.13-.26-.2-.55-.34z" />
+        </svg>
+        <span className="hidden sm:inline">WhatsApp</span>
+      </a>
     </div>
+    
   );
+  
 };
 
 export default ContactPage;
