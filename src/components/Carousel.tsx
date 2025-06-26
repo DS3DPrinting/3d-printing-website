@@ -6,7 +6,7 @@ const Carousel: React.FC = () => {
 
   const slides = [
     {
-      image: '../public/Carousel/precision.webp',
+      image: '/Carousel/precision.webp',
       title: 'Precision 3D Printing',
       description: 'High-quality prints with incredible detail and accuracy'
     },
