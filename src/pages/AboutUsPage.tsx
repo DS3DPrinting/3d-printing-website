@@ -52,7 +52,7 @@ const AboutUsPage: React.FC<AboutUsPageProps> = ({ onPageChange }) => {
             </div>
             <div>
               <img 
-                src="../public/D&S 3D logo new copy.jpg" 
+                src="./D&S 3D logo new copy.jpg" 
                 alt="3D Printing workshop"
                 className="rounded-lg shadow-lg w-full h-auto"
               />

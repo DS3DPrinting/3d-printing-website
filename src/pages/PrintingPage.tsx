@@ -132,7 +132,7 @@ const PrintingPage: React.FC<PrintingPageProps> = ({ onPageChange }) => {
             </div>
             <div>
               <img 
-                src="../public/printingPage/FDM_tech.webp" 
+                src="./printingPage/FDM_tech.webp" 
                 alt="3D Printer in action"
                 className="rounded-lg shadow-lg w-full h-auto"
               />
@@ -272,32 +272,32 @@ const PrintingPage: React.FC<PrintingPageProps> = ({ onPageChange }) => {
               {
                 title: "Automotive Parts",
                 description: "Custom brackets, interior components, and replacement parts",
-                image: "../public/printingPage/Automotive_Parts.webp"
+                image: "./printingPage/Automotive_Parts.webp"
               },
               {
                 title: "Medical Devices",
                 description: "Prosthetics, surgical guides, and medical equipment housings",
-                image: "../public/printingPage/Medical_Devices.webp"
+                image: "./printingPage/Medical_Devices.webp"
               },
               {
                 title: "Consumer Products",
                 description: "Electronics housings, household items, and custom accessories",
-                image: "../public/printingPage/Consumer_Products.webp"
+                image: "./printingPage/Consumer_Products.webp"
               },
               {
                 title: "Architectural Models",
                 description: "Scale models, concept visualization, and presentation pieces",
-                image: "../public/printingPage/Architectural_Models.webp"
+                image: "./printingPage/Architectural_Models.webp"
               },
               {
                 title: "Educational Tools",
                 description: "Teaching aids, scientific models, and interactive displays",
-                image: "../public/printingPage/Educational_Tools.webp"
+                image: "./printingPage/Educational_Tools.webp"
               },
               {
                 title: "Art & Design",
                 description: "Sculptures, decorative objects, and creative installations",
-                image: "../public/printingPage/Art_Design.webp"
+                image: "./printingPage/Art_Design.webp"
               }
             ].map((application, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">

@@ -28,7 +28,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage, onPageChange }) =>
           onClick={() => onPageChange('home')} 
           className="flex items-center space-x-3 group">
             <img 
-              src="/D&S 3D logo new copy.jpg" 
+              src="./D&S 3D logo new copy.jpg" 
               alt="D&S 3D Printing Logo" 
               className="h-12 w-auto"
             />

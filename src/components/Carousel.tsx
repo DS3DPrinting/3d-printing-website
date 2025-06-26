@@ -6,17 +6,17 @@ const Carousel: React.FC = () => {
 
   const slides = [
     {
-      image: '/Carousel/precision.webp',
+      image: './Carousel/precision.webp',
       title: 'Precision 3D Printing',
       description: 'High-quality prints with incredible detail and accuracy'
     },
     {
-      image: '/Carousel/custom3dModeling.webp',
+      image: './Carousel/custom3dModeling.webp',
       title: 'Custom 3D Modeling',
       description: 'Turn your ideas into detailed 3D models ready for printing'
     },
     {
-      image: '/Carousel/rapid prototyping.webp',
+      image: './Carousel/rapid prototyping.webp',
       title: 'Rapid Prototyping',
       description: 'Fast turnaround for prototypes and custom parts'
     }

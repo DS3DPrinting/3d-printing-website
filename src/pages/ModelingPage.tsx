@@ -136,7 +136,7 @@ const ModelingPage: React.FC<ModelingPageProps> = ({ onPageChange }) => {
             </div>
             <div>
               <img 
-                src="../public/modelingPage/modeling_process.webp" 
+                src="./modelingPage/modeling_process.webp" 
                 alt="3D Modeling software interface"
                 className="rounded-lg shadow-lg w-full h-auto"
               />
