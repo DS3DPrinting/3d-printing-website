@@ -390,14 +390,14 @@ const ContactPage: React.FC<ContactPageProps> = ({ onPageChange }) => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+15551234567"
+              href="tel:0771606788"
               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-200 inline-flex items-center justify-center space-x-2"
             >
               <Phone className="h-5 w-5" />
               <span>Call Now</span>
             </a>
             <a
-              href="mailto:info@ds3dprinting.com"
+              href="mailto:dsdprinting0@gmail.com"
               className="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-200 inline-flex items-center justify-center space-x-2"
             >
               <Mail className="h-5 w-5" />
