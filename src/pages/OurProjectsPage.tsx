@@ -356,9 +356,9 @@ const OurProjectsPage: React.FC<OurProjectsPageProps> = ({ onPageChange }) => {
                           <span className={`px-2 py-1 rounded-full text-xs font-medium ${getMaterialColor(project.material)}`}>
                             {project.material}
                           </span>
-                          <span className={`px-2 py-1 rounded-full text-xs font-medium ${getDifficultyColor(project.difficulty)}`}>
+                          {/* <span className={`px-2 py-1 rounded-full text-xs font-medium ${getDifficultyColor(project.difficulty)}`}>
                             {project.difficulty}
-                          </span>
+                          </span> */}
                         </div>
                       </div>
                       
