@@ -6,6 +6,79 @@ interface HomePageProps {
   onPageChange: (page: string) => void;
 }
 
+const clientReviews = [
+  {
+    id: "1",
+    rating: 5,
+    review: "Good quality 3D printing parts 👍😀",
+    clientName: "Chamodh Eranda",
+    time: "25 Mar 2023" 
+  },
+   {
+    id: "2",
+    rating: 5,
+    review: "Best customer service💗🫀",
+    clientName: "Yasiru Madusanka",
+    time: "31 weeks ago" 
+  },
+   {
+    id: "4",
+    rating: 5,
+    review: "Great work 👍",
+    clientName: "Sithum Abhimana",
+    time: "10 weeks ago" 
+  },
+   {
+    id: "5",
+    rating: 5,
+    review: "Awesome experience at D&S 3d printing! Had a custom GPU support bracket printed and the quality was fantastic. Fast and friendly service. Highly recommend! 😍💪",
+    clientName: "Pramod Madushan",
+    time: " 9 weeks ago" 
+  },
+   {
+    id: "6",
+    rating: 5,
+    review: "Great work",
+    clientName: "lasith hansana",
+    time: "8 weeks ago" 
+  },
+   {
+    id: "7",
+    rating: 5,
+    review: "Highly recommend , Fast and good costumer service",
+    clientName: "Waththage Lahiru",
+    time: "8 weeks ago" 
+  },
+   {
+    id: "8",
+    rating: 5,
+    review: "Excellent 3D printing quality with sharp details and smooth finishing. The service was fast, communication was clear, and the final product exceeded expectations. Highly recommend for anyone needing precise and professional 3D prints.",
+    clientName: "Nemsara Inushan",
+    time: "6 weeks ago" 
+  },
+  {
+    id: "9",
+    rating: 5,
+    review: "The quality exceeded my expectations. Worth every penny and highly recommended",
+    clientName: "DK_Lafre",
+    time: "2 weeks ago" 
+  },
+  {
+    id: "10",
+    rating: 5,
+    review: "Great place to have your 3D print to be done, turn your idea into a reality. I just sent an image with rough dimensions and he Designed -> Verified -> Printed -> Delivered Safely. Thanks",
+    clientName: "Binod Malaka",
+    time: "4 weeks ago" 
+  },
+   {
+    id: "11",
+    rating: 5,
+    review: "Fast and Quality Service, Good Communication, Well Organized Shipping. Overall Highly Recommended...",
+    clientName: "Dilusha Samarasekara",
+    time: "2 weeks ago" 
+  },
+];
+
 const HomePage: React.FC<HomePageProps> = ({ onPageChange }) => {
   return (
     <div className="space-y-16">
@@ -173,65 +246,28 @@ const HomePage: React.FC<HomePageProps> = ({ onPageChange }) => {
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">What Our Clients Say</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-            <div className="bg-white p-6 rounded-lg shadow-lg">
+            {clientReviews.map((review) => (
+            <div key={review.id} className="bg-white p-6 rounded-lg shadow-lg">
               <div className="flex items-center mb-4">
-                {[...Array(5)].map((_, i) => (
+                {[...Array(review.rating)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                 ))}
               </div>
               <p className="text-gray-600 mb-4">
-                "Best customer service💗🫀 …"
+                {review.review}
               </p>
               <div className="flex items-center">
                 <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center mr-3">
                   <Users className="h-6 w-6 text-gray-600" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Yasiru Madusanka</p>
-                  <p className="text-sm text-gray-500">5 Months Ago</p>
+                  <p className="font-semibold text-gray-900">{review.clientName}</p>
+                  <p className="text-sm text-gray-500">{review.time}</p>
                 </div>
               </div>
             </div>
+            ))}
 
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <div className="flex items-center mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                ))}
-              </div>
-              <p className="text-gray-600 mb-4">
-                "Amezing technology & can customize on your own.Superb coustomer service."
-              </p>
-              <div className="flex items-center">
-                <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center mr-3">
-                  <Users className="h-6 w-6 text-gray-600" />
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-900">Tharindu Ravishan</p>
-                  <p className="text-sm text-gray-500">2 Years Ago</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <div className="flex items-center mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                ))}
-              </div>
-              <p className="text-gray-600 mb-4">
-                "Good quality 3D printing parts 👍😀 …"
-              </p>
-              <div className="flex items-center">
-                <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center mr-3">
-                  <Users className="h-6 w-6 text-gray-600" />
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-900">Chamodh Eranda xrobot</p>
-                  <p className="text-sm text-gray-500">2 Years Ago</p>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 

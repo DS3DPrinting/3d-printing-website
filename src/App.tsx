@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import PrintingPage from './pages/PrintingPage';
 import ModelingPage from './pages/ModelingPage';
+import OurProjectsPage from './pages/OurProjectsPage';
 import AboutPrintingPage from './pages/AboutPrintingPage';
 import AboutUsPage from './pages/AboutUsPage';
 import ContactPage from './pages/ContactPage';
@@ -19,6 +20,8 @@ function App() {
         return <PrintingPage onPageChange={setCurrentPage} />;
       case '3d-modeling':
         return <ModelingPage onPageChange={setCurrentPage} />;
+      case 'our-projects':
+        return <OurProjectsPage onPageChange={setCurrentPage} />;
       case 'about-printing':
         return <AboutPrintingPage onPageChange={setCurrentPage} />;
       case 'about-us':
