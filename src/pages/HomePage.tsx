@@ -171,6 +171,26 @@ const HomePage: React.FC<HomePageProps> = ({ onPageChange }) => {
                 </span>
               </div>
             </div>
+            <div 
+              className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+              onClick={() => onPageChange('our-projects')}
+            >
+              <div className="text-center">
+                <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Our Projects</h3>
+                <p className="text-gray-600 mb-4">
+                  Explore our portfolio of successful 3D printing projects across various industries. 
+                  See the quality and precision we deliver for our clients.
+                </p>
+                <span className="text-indigo-600 font-semibold inline-flex items-center">
+                  View Projects <ArrowRight className="h-4 w-4 ml-1" />
+                </span>
+              </div>
+            </div>
           </div>
         </section>
 
