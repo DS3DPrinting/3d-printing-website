@@ -14,7 +14,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage, onPageChange }) =>
     { id: '3d-printing', label: '3D Printing' },
     { id: '3d-modeling', label: '3D Modeling' },
     { id: 'our-projects', label: 'Our Projects' },
-    { id: 'about-printing', label: 'About 3D Printing' },
+    { id: 'about-printing', label: 'What\'s 3D Printing' },
     { id: 'about-us', label: 'About Us' },
     { id: 'contact', label: 'Contact Us' }
   ];
